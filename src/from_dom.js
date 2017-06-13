@@ -676,3 +676,5 @@ function copy(obj) {
   for (let prop in obj) copy[prop] = obj[prop]
   return copy
 }
+
+window.DOMParser = DOMParser

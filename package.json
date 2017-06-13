@@ -20,14 +20,16 @@
   },
   "devDependencies": {
     "buble": "^0.15.1",
-    "mocha": "^3.0.2",
     "ist": "^1.0.0",
     "jsdom": "^10.1.0",
+    "mocha": "^3.0.2",
+    "prosemirror-test-builder": "^0.21.0",
     "rimraf": "^2.5.4",
-    "prosemirror-test-builder": "^0.21.0"
+    "webpack": "^2.6.1"
   },
   "scripts": {
     "test": "mocha test/test-*.js",
+    "bundle": "webpack",
     "build": "rimraf dist && buble -i src -o dist --no-named-function-expr",
     "prepublish": "npm run build"
   }
